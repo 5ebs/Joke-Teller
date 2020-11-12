@@ -1,0 +1,62 @@
+/*GIF from Giphy - https://giphy.com/gifs/loop-emoji-motion-graphics-7TwwMMfVIHTnvsnK0S */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #F29CB1;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('./joker.gif');
+  background-size: auto;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-family: Courier, monospace;
+  font-size: 20px;
+  color: white;
+  background: #F45F83;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 12px -1px rgba(0,0,0,0.72);
+}
+
+button:hover {
+  filter: brightness(95%);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(90%);
+}
+
+/* Media Query*/
+@media screen and (max-width: 1000px) {
+  .container {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  button {
+    box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.5);
+  }
+}
